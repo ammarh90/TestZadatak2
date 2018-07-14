@@ -1,0 +1,12 @@
+// Load normalize css
+@import "normalize";
+
+$color: #000;
+
+body {
+	color: $color;
+}
+
+.test {
+	color:#fff;
+}

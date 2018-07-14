@@ -1,0 +1,24 @@
+{
+  "name": "zadatak1",
+  "version": "1.0.0",
+  "description": "Test project for Locastic company",
+  "scripts": {
+    "default": "gulp",
+    "build": "gulp build",
+    "sass": "gulp sass",
+    "watch": "gulp watch"
+  },
+  "author": "Ammar Hakanovic",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-normalize-scss": "^8.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {}
+}
