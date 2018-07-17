@@ -1,12 +1,7 @@
 // Load normalize css
 @import "normalize";
 
-$color: #000;
-
-body {
-	color: $color;
-}
-
-.test {
-	color:#fff;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i&subset=latin-ext');
+@import "config";
+@import "base";
+@import "layout";

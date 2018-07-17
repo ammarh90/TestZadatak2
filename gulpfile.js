@@ -9,6 +9,7 @@ var gulp 		 = require('gulp'),
 	notify 		 = require('gulp-notify'),
 	runSequence  = require('run-sequence'),
     clean 		 = require('gulp-clean');
+    
 
 var onError = function(err) {
   notify.onError({
@@ -63,6 +64,10 @@ gulp.task('clean', function () {
     return gulp.src('dist', {read: false})
         .pipe(clean());
 });
+
+
+//Use slideshow script
+
 
 // BUILD TASKS
 // ------------
