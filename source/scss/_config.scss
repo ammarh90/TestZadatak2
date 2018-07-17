@@ -2,6 +2,18 @@ $primary-background: #00a1d1;
 $primary-text-color: #ffffff;
 $primary-font:'Roboto', sans-serif;
 
+// Header
+$header-bg: $primary-background;
+
 // Menu config
 $menu-hover-bg: #008ab3;
+$menu-text-color: $primary-text-color;
+$menu-font: $primary-font;
+$menu-dropdown-bg: #333333;
+$menu-dropdown-item-hover-bg: $primary-background;
 
+// Slideshow config
+$slideshow-font: $primary-font;
+$slideshow-text-color: $primary-text-color;
+$slideshow-dots-color: #ffffff;
+$slideshow-dots-active-color: $primary-background;

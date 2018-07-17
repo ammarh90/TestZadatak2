@@ -1,12 +1,15 @@
+/* css for header*/
 .header {
 	height:75px;
 	width:100%;
-	background-color: $primary-background;
+	background-color: $header-bg;
+	position: relative;
+	z-index: 101;
 
 	&__container {
 		@extend .container;
 	}
-
+	/*  logo*/
 	&__logo {
 		@extend .left;
 
@@ -16,7 +19,7 @@
 			margin-left: 38px;
 		}
 	}
-
+	/*  header menu */
 	&__menu {
 		@extend .right;
 
@@ -38,48 +41,50 @@
         		background:$menu-hover-bg;
     		}
 		}
-
+		/* menu link*/
 		&__link {
 			display: block;
-			color:$primary-text-color;
+			color:$menu-text-color;
 			text-decoration: none;
 			padding-left: 28px;
 			padding-right: 28px;
 			height: 75px;
 			line-height: 75px;
 			font-size: 22px;
-			font-family: $primary-font;
+			font-family: $menu-font;
 		}
-
+			
+		/*  dropdown*/
 		&__dropdown{
 			margin:0px;
 			padding: 0px;
 			list-style: none;
 			width: 254px;
-			background-color: #333333;
+			background-color: $menu-dropdown-bg;
 			position: absolute;
 			right:0px;
 			display: none;
 			float: left;
 
+			/*  dropdown link*/
+			&__link{
+				margin: 0px;
+				text-decoration: none;
+				font-size: 18px;
+				color: $menu-text-color;
+				display: block;
+				padding-top: 13px;
+				padding-left: 26px;
+				padding-right: 26px;
+				padding-bottom: 12px;
+				text-align: right;
+				font-family:$menu-font;
 
-		&__link{
-			margin: 0px;
-			text-decoration: none;
-			font-size: 18px;
-			color: #fff;
-			display: block;
-			padding-top: 13px;
-			padding-left: 26px;
-			padding-right: 26px;
-			padding-bottom: 12px;
-			text-align: right;
-
-			&:hover {
-    			display: block;
-    			background-color: $menu-hover-bg;
-    			}
+				&:hover {
+	    			display: block;
+	    			background-color: $menu-dropdown-item-hover-bg;
+	    		}
 			}
 		}
-	}
+	}	
 }
