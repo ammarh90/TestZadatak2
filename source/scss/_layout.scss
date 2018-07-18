@@ -110,3 +110,26 @@
 	}
 }
 
+.footer {
+	width: 100%;
+	background: $footer-bg;
+	height: 70px;
+	font-family: $footer-font;
+	font-size: 16px;
+	color: $footer-color;
+	line-height: 36px;
+
+	&__wrap {
+		@extend .container;
+	}
+
+	&__left {
+		@extend .left;
+		margin-top: 16px;
+	}
+
+	&__right {
+		@extend .right;
+		margin-top: 16px;
+	}
+}
