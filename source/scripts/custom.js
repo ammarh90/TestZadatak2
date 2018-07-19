@@ -44,7 +44,20 @@ $(document).ready(function(){
 
 		// validate form
 		if(validation.check()){
-			// silence is gold
+
+			// post ajax form
+			$.ajax({
+				type: "POST",
+				url: "http://www.locastic.com/api/v1/fe-dev",
+				data: el.serialize(), // serializes the form's elements.
+				success: function(data)
+				{
+				   	alert(data); // show response from the php script.
+				},
+				error: function (request, status, error) {
+					alert("Greška na serveru");
+				}
+	         });
 		}
 
 		return false;
