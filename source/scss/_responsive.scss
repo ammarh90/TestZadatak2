@@ -1,0 +1,138 @@
+// Responsive CSS for Tablets
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+  .container {
+  	width:748px;
+  }
+  .article{
+  	width:361px; 
+
+  	&__title{
+  		font-size: 36px;
+  	}
+  }
+  
+}
+
+// Responsive CSS for Phones
+@media (max-width: 767px){
+	.container {
+  		width:300px;
+  }
+
+  .slideshow{
+
+    &__image{
+      height: 400px;
+    }
+
+    &__text{
+      font-size: 40px;
+    }
+  }
+
+  .article{
+    width: 300px;
+
+    &__title{
+      font-size: 32px;
+    }
+  }
+
+	.contact {
+    padding-bottom: 12px;
+
+		&__form {
+			width: 300px;
+		}
+
+    &__title{
+      line-height: 45px;
+      padding-top: 49px;
+      padding-bottom: 49px;
+    }
+	}
+
+  .footer{
+    height: auto;
+
+    &__left{
+      text-align: center;
+      float: none;
+      margin-top: 0px;
+      padding-top: 17px;
+      line-height: 36px;
+    }
+
+    &__right{
+      text-align: center;
+      margin-top: 0px;
+      line-height: 36px;
+      padding-bottom: 33px;
+      float: none;
+    }
+  }
+}
+
+// Responsive CSS for Phones And Tablet
+@media (max-width: 1023px){
+  .header {
+    &__menu {
+      &__opener {
+        display: block;
+      }
+
+      &__list {
+        display: none;
+        background: #333;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top:75px;
+        left:0px;
+        padding-top: 39px;
+        padding-bottom: 39px;
+      }
+
+      &__item{
+        float:none;
+        text-align: center;
+
+        &:hover > .header__menu__link {
+          background:transparent;
+        }
+      }
+
+      &__link{
+        text-align: center;
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+        font-size: 30px;
+
+        &:hover {
+          color:$menu-dropdown-item-hover-bg;
+        }
+      }
+
+      &__dropdown{
+        float: none;
+        width: auto;
+        position: static;
+        display: block;
+
+        &__link{
+          text-align: center;
+          display: inline-block;
+          padding-top: 9px;
+          padding-bottom: 9px;
+
+          &:hover {
+            background-color:transparent;
+            color: $menu-dropdown-item-hover-bg;
+          }
+        }
+      }
+    }
+  }
+}

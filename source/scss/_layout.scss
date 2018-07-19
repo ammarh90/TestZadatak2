@@ -23,6 +23,12 @@
 	&__menu {
 		@extend .right;
 
+		&__opener {
+			display:none;
+			margin-top:27px;
+			margin-right:16px;
+		}
+
 		&__list {
 			margin:0px;
 			padding: 0px;

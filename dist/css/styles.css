@@ -401,6 +401,12 @@ template {
   /*  dropdown*/
 }
 
+.header__menu__opener {
+  display: none;
+  margin-top: 27px;
+  margin-right: 16px;
+}
+
 .header__menu__list {
   margin: 0px;
   padding: 0px;
@@ -676,6 +682,114 @@ template {
   color: #fff;
   border-radius: 4px;
   border: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container, .header__container, .content, .contact__wrap, .footer__wrap {
+    width: 748px;
+  }
+  .article {
+    width: 361px;
+  }
+  .article__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container, .header__container, .content, .contact__wrap, .footer__wrap {
+    width: 300px;
+  }
+  .slideshow__image {
+    height: 400px;
+  }
+  .slideshow__text {
+    font-size: 40px;
+  }
+  .article {
+    width: 300px;
+  }
+  .article__title {
+    font-size: 32px;
+  }
+  .contact {
+    padding-bottom: 12px;
+  }
+  .contact__form {
+    width: 300px;
+  }
+  .contact__title {
+    line-height: 45px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+  .footer {
+    height: auto;
+  }
+  .footer__left {
+    text-align: center;
+    float: none;
+    margin-top: 0px;
+    padding-top: 17px;
+    line-height: 36px;
+  }
+  .footer__right {
+    text-align: center;
+    margin-top: 0px;
+    line-height: 36px;
+    padding-bottom: 33px;
+    float: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header__menu__opener {
+    display: block;
+  }
+  .header__menu__list {
+    display: none;
+    background: #333;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+  }
+  .header__menu__item {
+    float: none;
+    text-align: center;
+  }
+  .header__menu__item:hover > .header__menu__link {
+    background: transparent;
+  }
+  .header__menu__link {
+    text-align: center;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+  }
+  .header__menu__link:hover {
+    color: #00a1d1;
+  }
+  .header__menu__dropdown {
+    float: none;
+    width: auto;
+    position: static;
+    display: block;
+  }
+  .header__menu__dropdown__link {
+    text-align: center;
+    display: inline-block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  .header__menu__dropdown__link:hover {
+    background-color: transparent;
+    color: #00a1d1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
