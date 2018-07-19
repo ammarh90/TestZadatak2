@@ -684,6 +684,17 @@ template {
   border: none;
 }
 
+.form-error {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: red;
+  margin-top: 4px;
+}
+
+.input-invalid {
+  border: solid 1px red;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .container, .header__container, .content, .contact__wrap, .footer__wrap {
     width: 748px;

@@ -176,3 +176,14 @@
 		border: none;
 	}
 }
+
+.form-error {
+	font-family:$primary-font;
+	font-size:18px;
+	color:red;
+	margin-top:4px;
+}
+
+.input-invalid {
+	border:solid 1px red;
+}

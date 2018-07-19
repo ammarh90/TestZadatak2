@@ -17,4 +17,37 @@ $(document).ready(function(){
 		return false;
 	});
 
+
+	// Submit contact form
+	$('.contact__form').submit(function(){
+
+		var el = $(this);
+
+		// Form validation config
+		var validation_config = {
+			"name": {
+				"type": "input",
+				"validation": ["required"]
+			},
+			"email": {
+				"type": "input",
+				"validation": ["required", "email"]
+			},
+			"message": {
+				"type": "textarea",
+				"validation": ["required"]
+			},
+		};
+
+		// Init form validation
+		var validation = new FormValidation(el, validation_config);
+
+		// validate form
+		if(validation.check()){
+			// silence is gold
+		}
+
+		return false;
+	});
+
 });
